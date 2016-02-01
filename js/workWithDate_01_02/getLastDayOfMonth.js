@@ -23,3 +23,14 @@ describe("getLastDayOfMonth", function() {
         assert.equal(getLastDayOfMonth(2013, 1), 28);
     });
 });
+
+function getDateAgo(date, days) {
+    var dateCopy = new Date(date);
+    dateCopy.setDate(dateCopy.getDate() - days);
+    return dateCopy.getDate();
+}
+
+function getLastDayOfMonth(year, month) {
+    var date = new Date(year, month+1);
+    return getDateAgo(date, 1);
+}
