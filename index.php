@@ -45,6 +45,15 @@
 
 			$('#result').html( ' = '+$('#money').val() * cun);
 		});
+
+		$('#money').keyup(function(event) {
+			var cun = $('#currency option:selected').attr('data-'+$('#variant option:selected').val());
+
+			$('#result').html( ' = '+$('#money').val() * cun);
+		}).keydown(function(event) {
+			var cun = $('#currency option:selected').attr('data-'+$('#variant option:selected').val());
+
+			$('#result').html( ' = '+$('#money').val() * cun);});
 	});
 </script>
 </html>
