@@ -1,0 +1,15 @@
+{
+  "name": "vendor_name/package_name",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Evgeni Lanin",
+      "email": "zertlanin@gmail.com"
+    }
+  ],
+  "require": {
+    "components/angular.js": "1.3.16"
+  }
+}
